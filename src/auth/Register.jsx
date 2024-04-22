@@ -42,7 +42,7 @@ const onSubmit = (data) => {
   return (
     <div>
   <ul className="breadcrumb">
-    <li><a href="index.html">Home</a> <span className="divider">/</span></li>
+    <li><a href="/">Home</a> <span className="divider">/</span></li>
     <li className="active">Registration</li>
   </ul>
   <hr className="soft" />

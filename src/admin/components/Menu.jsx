@@ -21,9 +21,25 @@ export default function Menu() {
                 </a>
                 <ul className="nav nav-treeview">
                   <li className="nav-item">
-                    <Link to='/admin/product' className="nav-link">
+                    <Link to='/admin/product/page/1' className="nav-link">
                       <i className="far fa-circle nav-icon" />
                       <p>Products</p>
+                    </Link>
+                  </li>
+                </ul>
+                <ul className="nav nav-treeview">
+                  <li className="nav-item">
+                    <Link to='/admin/category/page/1' className="nav-link">
+                      <i className="far fa-circle nav-icon" />
+                      <p>Category</p>
+                    </Link>
+                  </li>
+                </ul>
+                <ul className="nav nav-treeview">
+                  <li className="nav-item">
+                    <Link to='/admin/post/page/1' className="nav-link">
+                      <i className="far fa-circle nav-icon" />
+                      <p>Post</p>
                     </Link>
                   </li>
                 </ul>

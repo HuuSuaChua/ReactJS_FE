@@ -10,7 +10,7 @@ export default function TopNav() {
       <a className="nav-link" data-widget="pushmenu" href="#st" role="button"><i className="fas fa-bars" /></a>
     </li>
     <li className="nav-item d-none d-sm-inline-block">
-      <a href="index3.html" className="nav-link">Home</a>
+      <a href="/" className="nav-link">Home</a>
     </li>
     <li className="nav-item d-none d-sm-inline-block">
       <a href="#st" className="nav-link">Contact</a>
@@ -23,9 +23,6 @@ export default function TopNav() {
   </li>
     {/* Navbar Search */}
     <li className="nav-item">
-      <a className="nav-link" data-widget="navbar-search" href="#st" role="button">
-        <i className="fas fa-search" />
-      </a>
       <div className="navbar-search-block">
         <form className="form-inline">
           <div className="input-group input-group-sm">

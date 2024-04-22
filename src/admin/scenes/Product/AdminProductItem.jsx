@@ -23,7 +23,7 @@ export default function AdminProductItem(props) {
               <td>{imageElement}</td>
               <td>{product.attributes.price}</td>
               <td>{myView}</td>
-              <td style={{fontSize:'1.2em'}}><i class="fas fa-eye view-icon"></i><Link to={'/admin/product/edit/'+ product.id}><i class="fas fa-edit edit-icon"></i></Link><i name={product.id} class="fas fa-trash" onClick={handleDelete}></i></td>
+              <td style={{fontSize:'1.2em'}}><Link to={'/admin/product/'+ product.id}><i class="fas fa-eye view-icon"></i></Link><Link to={'/admin/product/edit/'+ product.id}><i class="fas fa-edit edit-icon"></i></Link><i name={product.id} class="fas fa-trash" onClick={handleDelete}></i></td>
             </tr>
   )
 }

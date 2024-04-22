@@ -27,12 +27,13 @@ export default function AuthBox() {
         <a href="#st"><span className="icon-user" />Welcome,{user.userName}!</a>
         <a href="#st"><span className="icon-user" /> My Account</a>
         <button onClick={handleLogOut}><span className="icon-signout" />Log Out</button>
+        
     </span>
     
   return (
     <>
       {(userRole == 'Public') &&(
-        <Navigate to="/product" replace={true}/>
+        <Navigate to="/" replace={true}/>
       )}
         {myView}     
     </>

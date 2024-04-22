@@ -8,6 +8,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import FileUpload from './../../../components/FileUpload';
 import { AppUrl } from './../../../Api/AppUrl';
+import { Link } from 'react-router-dom';
 export default function AdminProductAdd() {
   const [data, setData] = useState({
     "productName":"",
@@ -128,6 +129,7 @@ export default function AdminProductAdd() {
     <div className="offset-4 col-8">
       <button name="submit" type="submit" className="btn btn-primary">Submit</button>
     </div>
+    <Link className='btn btn-primary' to={'/admin/product/page/1'}>Quay về</Link>
   </div>
 </form>
       </div>

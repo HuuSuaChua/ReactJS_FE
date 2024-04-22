@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 export default function AdminProduct() {
   return (
     <div>
-      AdminProduct
+      <h1>AdminProduct</h1> 
       <Outlet/>
     </div>
   )

@@ -13,36 +13,14 @@ export default function NavBar() {
       </a>
       <div className="nav-collapse">
         <ul className="nav">
-          <li className="active"><a href="index.html">Home	</a></li>
+          <li className="active"><a href="/">Home	</a></li>
           <li ><Link to={'/product'} >Products</Link></li>
-          <li ><a href="grid-view.html">Grid View</a></li>
-          <li ><a href="three-col.html">Three Column</a></li>
-          <li ><a href="four-col.html">Four Column</a></li>
-          <li ><a href="general.html">General Content</a></li>
-        </ul>
-        <form action="#" className="navbar-search pull-left">
-          <input type="text" placeholder="Search" className="search-query span2" />
-        </form>
-        <ul className="nav pull-right">
-          <li className="dropdown">
-            <a data-toggle="dropdown" className="dropdown-toggle" href="#st"><span className="icon-lock" /> Login <b className="caret" /></a>
-            <div className="dropdown-menu">
-              <form className="form-horizontal loginFrm">
-                <div className="control-group">
-                  <input type="text" className="span2" id="inputEmail" placeholder="Email" />
-                </div>
-                <div className="control-group">
-                  <input type="password" className="span2" id="inputPassword" placeholder="Password" />
-                </div>
-                <div className="control-group">
-                  <label className="checkbox">
-                    <input type="checkbox" /> Remember me
-                  </label>
-                  <button type="submit" className="shopBtn btn-block">Sign in</button>
-                </div>
-              </form>
-            </div>
-          </li>
+          <li ><Link to={'/post'} >Post</Link></li>
+          <li ><Link to={'/page'} >Page</Link></li>
+          <li ><Link to={'/gridview'} >Grid View</Link></li>
+          <li ><Link to={'/weather'} >Weather</Link></li>
+          <li ><Link to={'/goldprice'} >Gold Price</Link></li>
+          <li ><Link to={'/usdprice'} >USD Price</Link></li>
         </ul>
       </div>
     </div>

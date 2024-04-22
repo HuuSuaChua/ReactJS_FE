@@ -15,7 +15,7 @@ export default function MainCarousel() {
     <div className="item active">
       <img style={{width: '100%'}} src="/app/assets/img/carousel1.png" alt="bootstrap ecommerce templates" />
       <div className="carousel-caption">
-        <h4>Bootstrap Ecommerce template</h4>
+        <h4>Bootstrap E commerce template</h4>
         <p><span>Highly Google seo friendly</span></p>
       </div>
     </div>

@@ -12,6 +12,7 @@ export default function ProductDetail() {
   var {id} = useParams();
   const  [product,setProduct] = useState({});
   const  [loading,setLoading] = useState(true);
+  const [quantity, setQuantity] = useState(1);
   var params = {
     populate:'*'
   }
@@ -36,11 +37,19 @@ export default function ProductDetail() {
         { symbol: 'đ', separator: '.', decimal: ',' }
         ).format()}</span></label>
       <div className="controls">
-        <input type="number" className="span6" placeholder="Qty." />
+      <input 
+        type="number" 
+        className="span6" 
+        placeholder="Qty."
+        value={quantity} 
+        onChange={(e) => setQuantity(parseInt(e.target.value))}
+      />
       </div>
     </div>
     <p>
-      <button type="submit" className="shopBtn" onClick={() => dispatch(addToCart({ item: { ...product, count: 1}}))}><span className=" icon-shopping-cart" /> Add to cart</button>
+      <button type="submit" 
+      className="shopBtn" 
+      onClick={() => dispatch(addToCart({ item: { ...product, count: quantity}}))}><span className=" icon-shopping-cart" /> Add to cart</button>
     </p></form></div>
   var myView3 = loading == true? <Loading /> : <div>{product.attributes.description}</div>
   

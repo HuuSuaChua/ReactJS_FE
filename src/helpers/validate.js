@@ -9,3 +9,16 @@ export const validateProduct = (data) => {
     if (data.image[1] === '') errPassMsg += 'Bạn cần hai hình ảnh sản phẩm <br />'
     return errPassMsg;
 }
+export const validateCategory = (data) => {
+    var errPassMsg = "";
+    if (data.categoryName==='') errPassMsg += 'Bạn cần nhập tên danh mục<br/>'
+    if (data.description === '') errPassMsg += 'Bạn cần nhập tên sản phẩm <br />'
+    return errPassMsg;
+}
+export const validatePost = (data) => {
+    var errPassMsg = "";
+    if (data.postName==='') errPassMsg += 'Bạn cần nhập tên Post<br/>'
+    if (data.description === '') errPassMsg += 'Bạn cần nhập tên sản phẩm <br />'
+    if (data.detail === '') errPassMsg += 'Bạn cần nhập detail <br />'
+    return errPassMsg;
+}

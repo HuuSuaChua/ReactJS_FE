@@ -65,8 +65,8 @@ var myView = cartItems.map((item) => (
   </table><br />
  
   		
-  <a href="products.html" className="shopBtn btn-large"><span className="icon-arrow-left" /> Continue Shopping </a>
-  <a href="login.html" className="shopBtn btn-large pull-right">Next <span className="icon-arrow-right" /></a>
+  <a href="/product" className="shopBtn btn-large"><span className="icon-arrow-left" /> Continue Shopping </a>
+  <a href="/successcart" className="shopBtn btn-large pull-right">Next <span className="icon-arrow-right" /></a>
 </div>
 
   )

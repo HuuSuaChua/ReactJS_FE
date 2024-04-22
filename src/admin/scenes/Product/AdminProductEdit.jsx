@@ -167,9 +167,6 @@ export default function AdminProductEdit() {
         <FileUpload addImage={addImage} />
         <div id='upLoadImgs'>{myViewImage}</div>
       </div>
- 
-
-
       <ToastContainer
         position="top-right"
         autoClose={5000}

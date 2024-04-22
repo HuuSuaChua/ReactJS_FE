@@ -12,7 +12,7 @@ export default function CopyRight() {
       <a href="#st"><img src="/app/assets/img/visa.png" alt="payment" /></a>
       <a href="#st"><img src="/app/assets/img/disc.png" alt="payment" /></a>
     </p>
-    <span>Copyright © 2022<br /> React Shop</span>
+    <span>Uy Tín Thương Hiệu © 2024<br /> Trương Học Hữu</span>
   </div>
 </div>
 
